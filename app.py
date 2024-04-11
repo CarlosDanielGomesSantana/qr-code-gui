@@ -34,8 +34,7 @@ imagem = Image.open(fp = "icon.png")
 largura_desejada = 200
 altura_desejada = 150
 imagem_redimensionada = imagem.resize(
-    (largura_desejada, altura_desejada),
-    imagem
+    size = (largura_desejada, altura_desejada)
 )
 
 # Converter a imagem redimensionada para um formato suportado pelo Tkinter
@@ -55,8 +54,7 @@ label_imagem.imagem_tk = imagem_tk
 
 # Atribuir o ícone à janela
 janela.iconphoto(
-    default = True,
-    imagem = icone
+    True, icone
 )
 
 # Definir a posição da janela
